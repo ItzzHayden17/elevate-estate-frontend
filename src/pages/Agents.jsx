@@ -9,7 +9,7 @@ const Agents = () => {
   const [agentData,setAgentData] = useState([])
 
   useEffect(()=>{
-    axios.get("http://localhost:8080/agents",{ withCredentials: true }).then(response =>{
+    axios.get("https://elevate-estate-backend-1.onrender.com/agents",{ withCredentials: true }).then(response =>{
       setAgentData(response.data);
       console.log(response.data);
     }).catch(err=>{

@@ -11,7 +11,7 @@ const ListingCard = (props) => {
 
   return (
     <div className="ListingCard">
-      <a href={"http://localhost:3000/listing/"+props.id}>
+      <a href={"https://elevate-estate-frontend.onrender.com/listing/"+props.id}>
       <img src={props.img} height="300px" width="100%"></img>
       </a>
       <div className="listing-info-container">

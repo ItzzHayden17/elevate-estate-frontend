@@ -6,7 +6,7 @@ export default function Navbar(){
     const [user,setUser] = useState(false)
 
     useEffect(()=>{
-        axios.get("http://localhost:8080/check-auth",{ withCredentials: true }).then((response)=>{
+        axios.get("https://elevate-estate-backend-1.onrender.com/check-auth",{ withCredentials: true }).then((response)=>{
             if (response.data == "No token") {
                 setUser(false)
             }else{

@@ -12,19 +12,19 @@ const MyProfile = () => {
     const [favourite,setFavourite] = useState([])
     
     useEffect(()=>{
-        axios.get(`http://localhost:8080/my-profile`,{ withCredentials: true }).then((response)=>{
+        axios.get(`https://elevate-estate-backend-1.onrender.com/my-profile`,{ withCredentials: true }).then((response)=>{
             setUserData(response.data[0][0])
 
               if (response.data[0][0].wishlist_listing_id) {
                 response.data[0][0].wishlist_listing_id.forEach((listing_id)=>{
-                  axios.get(`http://localhost:8080/listing/`+listing_id).then((response)=>{
+                  axios.get(`https://elevate-estate-backend-1.onrender.com/listing/`+listing_id).then((response)=>{
                     setWishlist(prev => [...prev,response.data])
                   })
                 })
               }
               if (response.data[0][0].favourite_listing_id) {
                 response.data[0][0].favourite_listing_id.forEach((listing_id)=>{
-                  axios.get(`http://localhost:8080/listing/`+listing_id).then((response)=>{
+                  axios.get(`https://elevate-estate-backend-1.onrender.com/listing/`+listing_id).then((response)=>{
                     setFavourite(prev => [...prev,response.data])
                   })
                 })
@@ -61,7 +61,7 @@ const MyProfile = () => {
           </div>
         <button>Edit</button>
         {isAgent? <><a href='/new-listing'><button>New Listing</button></a></> :<></>}  
-        <a href="http://localhost:8080/logout" className='span'>
+        <a href="https://elevate-estate-backend-1.onrender.com/logout" className='span'>
         Log out
         </a>
       </div>

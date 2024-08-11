@@ -11,7 +11,7 @@ const Listing = () => {
   const [loading,setLoading] = useState(false)
   
   useEffect(()=>{
-    axios.get("http://localhost:8080/listing/"+params.id).then(data=>{
+    axios.get("https://elevate-estate-backend-1.onrender.com/listing/"+params.id).then(data=>{
       console.log(listing);
       setListing(data.data)
       setLoading(true)

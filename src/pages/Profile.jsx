@@ -11,7 +11,7 @@ const Profile = () => {
     const [ listingData,setListingData] = useState()
 
     function fetchAgentData(){
-      axios.get("http://localhost:8080/profile/"+params.id).then(response =>{
+      axios.get("https://elevate-estate-backend-1.onrender.com/profile/"+params.id).then(response =>{
         setAgentData(response.data[0][0])
         if (response.data[1][0]) {
           console.log();

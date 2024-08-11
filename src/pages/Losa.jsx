@@ -39,7 +39,7 @@ export default function Lora(){
             </div>
             <motion.div initial={{ x: -100 }} animate={{ x: 1 }}>
               <div>
-                <form method="POST" action="http://localhost:8080/signup" className="input-section" encType="multipart/form-data">
+                <form method="POST" action="https://elevate-estate-backend-1.onrender.com/signup" className="input-section" encType="multipart/form-data">
                   <input name="name" placeholder="Name"></input>
                   <input name="surname" placeholder="Surname"></input>
                   <input name="email" placeholder="Email"></input>
@@ -94,7 +94,7 @@ export default function Lora(){
             </div>
             <div>
               <motion.div initial={{ x: -100 }} animate={{ x: 1 }}>
-                <form method="POST" action="http://localhost:8080/login" className="input-section" >
+                <form method="POST" action="https://elevate-estate-backend-1.onrender.com/login" className="input-section" >
                   <input name="email" placeholder="Email"></input>
                   <input name="password" placeholder="Password"></input>
 

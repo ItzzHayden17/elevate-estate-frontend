@@ -22,7 +22,7 @@ const PostListing = () => {
         <div className="PostListing ">
         <div>
             <h1 className="brittany">New listing</h1>
-            <form method='post' action="http://localhost:8080/new-listing" className="input-section" encType="multipart/form-data">
+            <form method='post' action="https://elevate-estate-backend-1.onrender.com/new-listing" className="input-section" encType="multipart/form-data">
             <input type="text" placeholder="Suburb" name="suburb"  className="seasons"/>
             <input type="text" placeholder="City" name="city" className="seasons"/>
             <input type="text" placeholder="Number of beds" name="number_of_beds" className="seasons"/>

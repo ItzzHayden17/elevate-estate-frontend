@@ -30,7 +30,7 @@ export default function Search(props){
   async function fetchData(e) {
     e.preventDefault()
       console.log("Search triggered");
-      var searchParams = `http://localhost:8080/listing/${city}/${bed}/${bath}/${rob}/${price}`
+      var searchParams = `https://elevate-estate-backend-1.onrender.com/listing/${city}/${bed}/${bath}/${rob}/${price}`
      await axios.get(searchParams).then(data=>{
         setListings(data.data)
         

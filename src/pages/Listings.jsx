@@ -18,7 +18,7 @@ const Listings = () => {
     }
 
     useEffect(()=>{
-      axios.get("http://localhost:8080/listings").then((data)=>{
+      axios.get("https://elevate-estate-backend-1.onrender.com/listings").then((data)=>{
         setListingData(data.data)
         console.log(data.data);
       })
