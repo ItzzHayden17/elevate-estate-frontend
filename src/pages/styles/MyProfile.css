@@ -1,0 +1,61 @@
+.MyProfile{
+    h1{
+        line-height: 0;
+    }
+    h3{
+        font-size: 40px;
+        margin-left: 20px;
+        line-height: 0;
+        font-weight: 400;
+
+    }
+    .details{
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+
+    }
+    .details button{
+        height: 40px;
+        align-self: center;
+        margin-left: 40px;
+    }
+    .span{
+        background-color: #ffff;
+        border: solid 1px red;
+        color: red;
+        height: 30px;
+        align-self: center;
+        margin-left: 40px;
+        padding: 5px 20px;
+        text-align: center;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .test{
+        display: flex;
+        flex-direction: column;
+    }
+    .agent-listing{
+        display: flex;
+        overflow-x: scroll;
+        padding: 30px;
+    }
+    a{
+        align-self: center;
+    }
+
+    .favourite{
+        overflow-x: scroll;
+        display: flex;
+        padding: 30px;
+    }
+    .wishlist{
+        display: flex;
+        overflow-x: scroll;
+        padding: 30px;
+    }
+
+}
+

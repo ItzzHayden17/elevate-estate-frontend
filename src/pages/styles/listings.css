@@ -1,0 +1,24 @@
+
+.Listings{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+.Listings-listing{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Listings .search{
+    width:50%
+}
+
+p{
+    white-space: pre-line
+}

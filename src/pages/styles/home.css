@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Brittany";
+    src: url("../../../public/brittany_signature/BrittanySignature.ttf");
+}
+@font-face {
+    font-family: "Seasons";
+    src: url("../../../public/Demo-The-Seasons/Fontspring-DEMO-theseasons-lt.otf");
+}
+
+.brittany{
+    font-family: "Brittany";
+    font-weight: 300;
+}
+
+.seasons{
+    font-family: "Seasons";
+    font-weight: lighter;
+}
+body{
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+}
+p{
+    font-size: 20px;
+}
+
+
+button{
+    background-color: #5271FF;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    padding: 8px 50px;
+}
+.Navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #53789F;
+    color: white;
+    padding: 0 20px;
+}
+.Navbar a{
+    color: white;
+}
+.route{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section_1{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url("../../../public/main_house.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.Search input{
+    width: 100%;
+    padding: 5px;       
+    font-size: 20px;
+    border-radius: 5px;
+    border: solid 2px rgb(165, 165, 165);
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0px;
+  }
+  .filter button{
+    padding: 0 25px;
+    font-size: 10px;
+  }
+  .options {
+    align-content: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  select {
+    padding: 5px;
+    margin: 0 3px;
+    border-radius: 10px;
+    border: solid 2px #d6cbb7;
+  }
+  
+  .section_2{
+    text-align: center;
+  }
+
+
+.features{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.feature{
+    width: 300px;
+}
+
+.feature h4{
+    font-size: 30px;
+    line-height: 1px;
+}
+
+
+
+.section_3{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.text-container{
+    width: 100%;
+    margin:0 10%
+}
+
+.section_4{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.GoogleAPI{
+    margin-top: 20px;
+    height: 300px;
+    background-color: black;
+    width: 100%;
+}
+
+.GitForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.GitForm-layout{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+    border: solid 2px black;
+    padding: 20px;
+}
+
+.GitForm-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.GitForm-form input{
+    border-width: 0 0 2px 0;
+    font-size: 20px;
+    padding: 5px;
+}
+.GitForm-form textarea{
+    border-width: 0 0 2px 0;
+    font-size: 20px;
+}
+.GitForm-contact{
+    display: flex;
+    flex-direction: column;
+    line-height: 10px;
+
+}
+.GitForm-contact button{
+    margin-top: 100px;
+}
+
+.z-index{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+
+    background-color: #ffffff7c;
+    padding: 30px;
+    border-radius: 10px;
+}
+           
+@media only screen and (max-width: 900px) {
+    .section_1{
+        display: flex;
+        height: 50vh;
+        background-image: url("../../../public/main_house.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        align-items: center;
+
+    }
+    .Navbar {
+        flex-direction: column;
+        font-size: 10px;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0 2px 30px;
+    }
+    .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section_3{
+
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .text-container{
+        text-align: center;
+        align-items: center;
+    }
+    .section_4{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+
+    }
+    .GitForm-layout{
+        width: 80%;
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .GitForm-form input{
+        padding: 40px;
+
+    }
+    .GitForm-form textarea{
+        padding: 40px;
+        margin-bottom: 40px;
+    }
+
+    .section_3{
+        margin-bottom: 50px;
+    }
+}

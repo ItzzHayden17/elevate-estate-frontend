@@ -1,0 +1,53 @@
+.ListingCard{
+    width:400px;
+    margin: 0 10px;
+    margin-top: 20px;
+    border: 0.5px solid;
+    border-radius: 10px;
+
+    .listing-info-container{
+        padding-left: 20px;
+        bottom: 0px;
+        left: 0px;
+        background-color: rgba(255, 255, 255, 0.616);
+        width: 95%;
+        border-radius: 10px;
+    }
+    
+}
+.ListingCard img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.area h1{
+    font-size: 30px;
+    line-height: 8px;
+}
+
+.price h1{
+    font-size: 30px;
+    margin-left:50px ;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a{
+    color: black;
+}
+.actions{
+    width: 200px;
+
+}
+.like{
+    background-color: rgb(255, 0, 0);
+}

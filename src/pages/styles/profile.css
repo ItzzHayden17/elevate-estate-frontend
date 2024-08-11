@@ -1,0 +1,70 @@
+.Profile{
+}
+p{
+    white-space: pre-line
+}
+
+.agent-profile{
+display: flex;
+flex-direction: row;
+margin: 40px;
+}
+
+.agent-profile img{
+    margin: 20px;
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+}
+.agent-profile .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1px;
+}
+
+.agent-description{
+    width: 60%;
+    margin: 0   50px;
+}
+.agent-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.contact-form{
+    height: 600px;
+    padding: 0 50px;
+    border: 2px solid black;
+    width: 30%;
+}
+.contact-form form{
+     display: flex;
+     flex-direction: column ;
+     height: 300px;
+     justify-content: space-evenly;    
+}
+
+.contact-form input{
+    border-width: 0 0 2px 0;
+    width: 60%;
+    font-size: 20px;
+}
+
+.contact-form textarea{
+    border-width: 0 0 2px 0;
+    width: 60%;
+    font-size: 20px;
+}
+
+.contact-form button{
+    width: 40%;
+}
+
+.listings{
+    display: flex;
+    flex-wrap: wrap;
+}
