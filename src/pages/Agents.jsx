@@ -19,7 +19,7 @@ const Agents = () => {
   return (
     <div>
         <Navbar />
-        {agentData.length == 0 ? <div>Loading</div> : agentData === "No auth token"? <div> Please log in to see this content</div>:
+        {agentData.length == 0 ? <div>Loading</div> : agentData == "No token"? <div> Please log in to see this content</div>:
           <div className="Agents">
                 {agentData.map((agent)=>{
                   return(
