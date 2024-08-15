@@ -5,6 +5,7 @@ import AgentCard from '../components/AgentCard'
 import axios from "axios"
 import { useEffect,useState } from "react"
 const Agents = () => {
+  axios.defaults.withCredentials = true
 
   const [agentData,setAgentData] = useState([])
 
